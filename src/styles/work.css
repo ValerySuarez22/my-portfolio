@@ -1,0 +1,68 @@
+.sectionWork {
+    background-image: url('/public/images/aboutme.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 20%;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.card-button {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    background-color: #008CBA;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+  /* Estilos responsivos */
+@media (max-width: 768px) {
+
+.card {
+    width: 300px;
+}
+}
+
+@media (max-width: 576px) {
+
+.card {
+    width: 250px;
+    }
+}

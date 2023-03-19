@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2? family= ABeeZee & family= Alfa+Slab+One & family= Changa & family= Cutive+Mono & familia= Gallo &family= Share+Tech+Mono & mostrar=cambiar');
+
+.sectionHome{
+    background-image: url('/public/images/home.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.home {
+    animation: fade-in 1s ease;
+    padding: 100px 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.title{
+    font-size: 'Alfa Slab One', monospace;
+    font-size: 90px;
+    color: #CAAE52;
+    text-align: justify;
+    margin: 0;
+    overflow: hidden; /* Ocultamos el texto sobrante */
+    border-right: .10em solid #DDDADA; /* Agregamos un cursor que parpadea */
+    white-space: nowrap; /* Evitamos que el texto se desplace a la siguiente línea */
+    letter-spacing: .15em; /* Añadimos un pequeño espacio entre cada letra */
+    animation: typing 3s steps(30, end); /* Configuramos la animación de máquina de escribir */
+}
+
+@keyframes typing {
+    from { width: 0 } /* El ancho del texto comienza en cero */
+    to { width: 100% } /* El ancho del texto llega al 100% (completo) */
+}
+
+h2{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 50px;
+    color: #DDDADA;
+    text-align: justify;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+h3{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 45px;
+    color: #DDDADA;
+    text-align: justify;
+}
+
+.icono-flecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5a623;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icono-flecha:hover {
+    background-color: #d48916;
+  }
+  

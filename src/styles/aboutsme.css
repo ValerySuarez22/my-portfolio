@@ -1,0 +1,98 @@
+.sectionAboutsme{
+    background-image: url('/public/images/aboutme.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100vh;
+}
+.about-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 75px 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.about-image {
+    width: 30%;
+    /* border-radius: 20%;  */
+    /* margin-bottom: 10px; */
+    order: 1;
+    margin: 50px; 
+}
+
+.title-abuot{
+    width: 70%;
+    text-align:justify;
+    font-size: 45px;
+    padding-left: 50px;
+    margin: 0;
+    justify-content: space-between;
+    color: #CAAE52;
+    font-family:'ABeeZee', sans-serif;
+}
+.about-text {
+    width: 70%;
+    text-align:justify;
+    font-size: 16px;
+    padding-left: 50px;
+    font-family: 'Changa', sans-serif;
+    color: #121214;
+}
+
+:root {
+    --bg: #121214;
+    --color: #CAAE52;
+}
+
+.wrapper {
+    /* padding: 10px; */
+    filter: url('#goo');
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    padding: 18px 14px 14px;
+    border-radius: 30px;
+    position: relative;
+    min-width: 5.23em;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-family: 'Changa', sans-serif;
+}
+
+.button:before,
+.button:after {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
