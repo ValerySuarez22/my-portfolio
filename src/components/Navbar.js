@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/navbar.css";
+import cv from "../assets/CV-valery.pdf";
+
 
 function Navbar() {
     return (
@@ -14,7 +16,7 @@ function Navbar() {
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#resumes">Resumes</a></li>
+                    <li><a href={cv}>Resumes</a></li>
                 </ul>
             </div>
         </nav>

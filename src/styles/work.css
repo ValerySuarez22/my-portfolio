@@ -1,8 +1,18 @@
 .sectionWork {
     background-image: url('/public/images/aboutme.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 20vh;
+ /* height: 20vh; */
+    width: 100%;
+    margin: 0;
+}
+
+.title-w{
+    color: #CAAE52;
+    font-size: 80px;
+    font-family:'ABeeZee', sans-serif;
+    margin: 0;
+    padding: 20px 0;
+    padding-top: 50px;
+    text-align: center;
 }
 
 .card-container {
@@ -12,44 +22,59 @@
 }
 
 .card {
-    width: 20%;
-    margin: 20px;
-    background-color: #fff;
+    width: 25%;
+    margin: 30px;
+    background-color: #ffffffda;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
+    border-radius: 20px;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
 }
 
 .card img {
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 .card-title {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 25px;
+    /* font-weight: 700; */
     margin: 10px 0;
+    padding: 0;
+    font-family:'ABeeZee', sans-serif;
+    text-align: center;
+    color: #CAAE52;
 }
 
 .card-text {
     font-size: 16px;
-    margin-bottom: 20px;
-    color: red;
+    margin-left: 20px;
+    margin-right: 20px;;
+    color: rgb(17, 14, 14);
+    font-family: 'Changa', sans-serif;
 }
 
 .card-button {
-    display: block;
-    width: 100px;
-    padding: 10px;
-    background-color: #008CBA;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #CAAE52;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 160px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
   /* Estilos responsivos */

@@ -16,11 +16,14 @@
 }
 
 .about-image {
-    width: 30%;
+    width: 20%;
     /* border-radius: 20%;  */
     /* margin-bottom: 10px; */
     order: 1;
     margin: 50px; 
+    padding-left: 200px;
+    opacity: 85%;
+    border-radius: 80px;
 }
 
 .title-abuot{
